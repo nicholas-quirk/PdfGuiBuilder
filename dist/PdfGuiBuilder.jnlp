@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="PdfGuiBuilder.jnlp">
+  <information>
+    <title>PdfGuiBuilder</title>
+    <vendor>Nicholas Quirk</vendor>
+    <description>null</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="PdfGuiBuilder.jar" size="2484" download="eager" />
+    <jar href="lib\OpenViewerFX-7.1.27.jar" size="3543818" download="eager" />
+    <jar href="lib\pdfbox-app-2.0.1.jar" size="7955872" download="eager" />
+  </resources>
+  <applet-desc  width="800" height="600" main-class="com.javafx.main.NoJavaFXFallback"  name="PdfGuiBuilder" >
+    <param name="requiredFXVersion" value="8.0+"/>
+  </applet-desc>
+  <jfx:javafx-desc  width="800" height="600" main-class="pdfguibuilder.PdfBoxGuiBuilder"  name="PdfGuiBuilder" />
+  <update check="always"/>
+</jnlp>
